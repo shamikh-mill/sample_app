@@ -15,5 +15,12 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def contact
+  end
   
 end
+
+
+# controller = StaticPagesController.new
+# Instantiates the class to make an object 
