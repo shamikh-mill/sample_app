@@ -1,5 +1,12 @@
 # Ruby on Rails Tutorial sample application
 
+
+1. cd /your/app/path
+2. bundle install
+3. bundle exec rake db:create
+4. bundle exec rake db:migrate
+5. bundle exec rails server
+
 This is the sample application for
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](http://www.railstutorial.org/)
@@ -23,6 +30,8 @@ Next, migrate the database:
 
 ```
 $ rails db:migrate
+# Might have to: 
+rake db:create
 ```
 
 Finally, run the test suite to verify that everything is working correctly:
@@ -38,4 +47,16 @@ $ rails server
 ```
 
 For more information, see the
-[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).  
+
+Adding New Pages: 
+1. Add to routes 
+```
+get  'static_pages/about'
+```
+2. Add an action (function) to the appropriate controller (StaticPages)
+````
+def about
+  end
+ ````
+3. Add a template (view)
